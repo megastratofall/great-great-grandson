@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>The Great-Great-Grandson</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">GREAT-GREAT-GRANDSON</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">HOME</a>
+            <a href="#characters">CHARACTERS</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#news">NEWS</a>
+            <a href="#contact">CONTACT ME</a>
+        </nav>
+    </header>
+
+    <!--home start-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <!-- Advertencia bajo construcción -->
+            <div class="construction-warning">
+                <p><strong>Attention:</strong> This page is under construction! Some sections may be incomplete. Changes will be uploaded very soon. Thank you for your patience!</p>
+            </div>
+            <!-- Fin de la advertencia bajo construcción -->
+
+            <h1>THE GREAT-GREAT-GRANDSON</h1>
+            <h3>An<span> ALMOST Medieval Fantasy, CHAPTER I</span></h3>
+            <p class="home-p">Venture into the beginning of the story from the viewpoint of Furia 
+                and Virginia in the past and of Dross and Serena in the present.
+            </p>
+        </div>
+    </section>
+
+    <!--home end-->
+
+    <!--characters start-->
+    <section class="characters" id="characters">
+        <div class="characters-content">
+            <div class="characters-description">
+                <h2 class="heading">Charact<span>ers</span></h2>
+                <p class="characters-p">In this adventure, you'll be able to control several characters, 
+                    but the main ones are <span>FURIA</span>, <span>VIRGINIA</span>, <span>DROSS</span>, and <span>SERENA</span>, 
+                    at least the protagonists of this first chapter. You'll discover the other characters with whom 
+                    you'll also interact as the plot unfolds. Here's a brief description of each one.
+                </p> 
+            </div>
+        </div>
+
+        <!--TARJETAS DE LOS PERSONAJES START---------------------------------------------------->
+        <div class="container">
+            <div class="card">
+                <div class="personaje">
+                    <div class="imagen_personaje"></div>
+                    <div class="detalle">
+                        <h2>FURIA</h2>
+                        <p id="description">Grumpy old man, enjoys a good glass of beer and a potato 
+                            pie on winter days. Despite his character, he managed to cultivate 
+                            friendships throughout his life, not because he sought them, yet he 
+                            is always surrounded by friends and a loyal companion he rescued many 
+                            years ago from the clutches of the forest
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="personaje_2">
+                    <div class="imagen_personaje_2"></div>
+                    <div class="detalle_2">
+                        <h2>VIRGINIA</h2>
+                        <p id="description">She still maintains her innocence from childhood, 
+                            some might say she's a bit naive, but she's loyal, cheerful, 
+                            and has a strong curiosity for knowledge. She's been Furia's 
+                            companion since the day he rescued her from the dangers of the forest
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="personaje_3">
+                    <div class="imagen_personaje_3"></div>
+                    <div class="detalle_3">
+                        <h2>DROSS</h2>
+                        <p id="description">He's an influential content creator on YouTube, 
+                            known for his channel DrossRotzank. He loves donuts, 
+                            empanadas, and dark humor. He has a 'small' fish named 
+                            Mussolini and shares an apartment with his friend Fernando 
+                            and Fernando's two daughters, Serena and Moira.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="personaje_4">
+                    <div class="imagen_personaje_4"></div>
+                    <div class="detalle_4">
+                        <h2>SERENA</h2>
+                        <p id="description">At 8 years old, despite her young age, 
+                            she's a very mature girl. Throughout her short life, 
+                            she has been surrounded by adults, a loyal companion 
+                            to her dad and her little sister. She's cheerful, optimistic, and affectionate
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <!--TARJETAS DE LOS PERSONAJES END---------------------------------------------------->
+
+    </section>
+    <!--characters end -->
+
+    <!--contact start-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>me</span></h2>
+        <form id="form" action="https://formspree.io/f/xyyrlqzw" method="POST" onsubmit="return validateForm()">
+            <div class="input-box">
+                <input id="name" name="name" type="text" placeholder="Name" required>
+                <input id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input id="phone" name="phone" type="number" placeholder="CellPhone ( optional )">
+                <input type="text" name="subject" placeholder="Subject" required>
+            </div>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your message here" required></textarea>
+            <input type="submit" value="Send" class="btn">
+        </form>
+    </section>
+    <!--contact ends-->
+
+    <!-- footer starts-->
+    <footer class="footer">
+        <div class="footer-iconTop">
+            <a href="https://www.instagram.com/megastratofall/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <div class="footer-text">
+            <p class="footer-text">&copy; 2024 The Great-Great-Grandson. All rights reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-circle'></i></a>
+        </div>
+        </footer>
+    <!-- footer ends-->
+
+    <!--scroll reveal start-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--scroll reveal ends-->
+
+    <script src="main.js"></script>
+</body>
+</html>

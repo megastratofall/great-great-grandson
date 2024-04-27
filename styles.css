@@ -1,0 +1,484 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--fuente-uncial);
+    border: none;
+    scroll-behavior: smooth;
+    outline: none;
+}
+
+:root{
+    --bg-color: #2a8c4a;
+    --second-color:#64c27b;
+    --text-color:#9bfab0;
+    --main--color:#d0fdd7;
+    --third--color:#ffffff;
+    --fourth--color:#89df75;
+    --complementario--color:#1ca381;
+    --complementario2--color:#008f6f;
+    --marronsis--color:##a46b21;
+    --naranjis-color:#e8c39e;
+    --amarillo--color:#f5e1ce;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    z-index: 100;
+}
+
+.header.sticky{
+    border-bottom:.1rem solid rgba(0, 0, 0, .2);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/* Definir las fuentes con @font-face */
+@font-face {
+    font-family: 'UncialAntiqua';
+    src: url('fonts/UncialAntiqua.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto1';
+    src: url('fonts/roboto1.ttf') format('truetype');
+}
+
+:root {
+    --fuente-uncial: 'UncialAntiqua';
+    --fuente-roboto: 'Roboto1'
+}
+
+/* Aplicar la fuente a los elementos h1 */
+h1 {
+    font-family: var(--fuente-uncial);
+}
+
+.logo{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-family: var(--fuente-uncial);
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main--color);
+    
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main--color);
+}
+
+.home-content h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+.home-content h1{
+font-size: 4rem;
+font-weight: 600;
+line-height: 1.1;
+}
+.home-content .home-p
+{
+    font-family: var(--fuente-roboto);
+    font-size: 20px;
+}
+
+span{
+color: var(--naranjis-color);
+}
+
+.contact{
+    background-color: var(--second-color);
+}
+
+.contact h2{
+margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+width: 100%;
+padding: 1.5rem;
+font-size: 1.6rem;
+color: var(--text-color);
+background: var(--naranjis-color);
+border-radius: .8rem;
+margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width:49%;
+}
+
+.contact form textarea{
+    resize:none;
+}
+
+.contact form .btn{
+    margin-top:2rem;
+    cursor:pointer;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--naranjis-color);
+    font-size: 1.6rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main--color);
+    color: var(--second-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.home-content p{
+    font-size: 1.6rem;
+    font-family: var(--fuente-roboto) ;
+    margin-right: 1rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--complementario2--color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--bg-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--amarillo--color);
+    color: var(--third--color);
+    box-shadow: 0 0 1rem var(--main--color);
+}
+
+.about-content .about-p
+{
+font-size: 18px;
+font-weight: 400;
+}
+
+/* 3 columnas para pantallas pequeñas */
+@media(max-width: 770px) {
+    .skills-tools img {
+    flex: 0 0 calc(33.33% - 16px);
+    max-width: 64px;
+    }  
+}
+
+
+.footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding: 2rem 9%;
+background: var(--bg-color);
+}
+
+.footer-text{
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: .8rem;
+background-color: var(--second-color);
+border-radius: 50%;
+transition: .5s ease;
+}
+
+.footer-iconTop a:hover{
+    box-shadow: 0 0 1rem var(--main--color);
+}
+
+.footer-iconTop a i{
+    font-size: 3.4rem;
+    color: var(--third--color);
+}
+
+/*BREAKPOINTS*/
+@media(max-width:1200px){
+    html{
+    font-size:55%;
+    }
+}
+
+@media(max-width: 991px){
+    .header{
+    padding: 2rem 3%;
+    }
+    section{
+    padding: 10rem 3% 2rem;
+    }
+    .portfolio {
+    padding-bottom:7rem;
+    }
+    .contact{
+    min-height:auto;
+    }
+    .footer{
+    padding: 2rem 3%; 
+    }
+}
+
+@media(max-width: 768px){
+    #menu-icon{
+    display:block;
+    }
+    .navbar {
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    display:none;
+    }
+
+    .navbar.active{
+    display:block;
+    }
+
+    .navbar a{
+    display: block;
+    text-align:center;
+    font-size: 2rem;
+    margin: 3rem 0;
+    }
+    .home{
+    flex-direction:column;
+    }
+    .home-content h3{
+    font-size:2.6rem;
+    }
+    .home-content h1{
+    font-size:5rem;
+    }
+}
+
+@media(max-width: 450px){
+    html{
+    font-size: 50%;
+    }
+    .contact form .input-box input{
+    width:100%;
+    }
+}
+@media(max-width: 365px){
+    .home-img img{
+    width:90vw;
+    }
+    .characters-img img{
+    width:90vw;
+    }
+    .footer{
+    flex-direction:column-reverse;
+    }
+    .footer p{
+    text-align:center;
+    margin-top:2rem;
+    }
+    }
+
+    .container
+    {
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .characters-description {
+        margin-bottom: 3rem;
+    }
+    .characters-content{
+        font-size: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .characters-p{
+        font-family: var(--fuente-roboto);
+    }
+    /* Establecer un diseño de columna en pantallas más pequeñas */
+    @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 768px) {
+        .card {
+            margin-bottom: 32px; /* Ajustar el margen inferior para separar las tarjetas */
+        }
+    }
+    .card {
+        height: 350px;
+        width: calc(25% - 16px); /* Ajustar el ancho de las tarjetas */
+        margin-bottom: 16px; /* Añadir espacio entre las tarjetas */
+        position: relative; /* Permitir que las tarjetas se superpongan */
+    }
+    }
+    .card
+    {
+        height: 350px;
+        width: 300px;
+        margin: 10px;
+        transition: 300ms;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+    }
+    .personaje,.personaje_2, .personaje_3, .personaje_4{
+        height: 350px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        background-color: var(--amarillo--color);
+        transition: 300ms;
+        position: absolute;
+
+    }
+    .imagen_personaje{
+        height: 200px;
+        width: 200px;
+        background-image: url(img/PORTRAIT-FURY.png);
+        background-size: cover;
+        margin-bottom: 200px;
+        transition: 300ms;
+        filter: drop-shadow(5px -4px 10px #000);
+    }
+    .imagen_personaje_2{
+        height: 200px;
+        width: 250px;
+        background-image: url(img/PORTRAIT-VIRGI.png);
+        background-size: cover;
+        margin-bottom: 200px;
+        transition: 300ms;
+        filter: drop-shadow(5px -4px 10px #000);
+    }
+    .imagen_personaje_3{
+        height: 200px;
+        width: 250px;
+        background-image: url(img/PORTRAIT-DROSS.png);
+        background-size: cover;
+        margin-bottom: 200px;
+        transition: 300ms;
+        filter: drop-shadow(5px -4px 10px #000);
+    }
+    .imagen_personaje_4{
+        height: 200px;
+        width: 200px;
+        background-image: url(img/PORTRAIT-FURY.png);
+        background-size: cover;
+        margin-bottom: 200px;
+        transition: 300ms;
+        filter: drop-shadow(5px -4px 10px #000);
+    }
+    .detalle, .detalle_2, .detalle_3, .detalle_4 {
+        height: 200px;
+        width: 300px;
+        background-color: var(--second-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        margin-top: 150px;
+        z-index: 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    } 
+    #description{
+        font-family: var(--fuente-roboto);
+        font-size: 1.5rem;
+    }
+
+/* Estilo para la advertencia bajo construcción START*/
+.construction-warning {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+/* Estilo para la advertencia bajo construcción END*/

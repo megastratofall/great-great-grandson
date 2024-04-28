@@ -447,7 +447,7 @@ transition: .5s ease;
     .imagen_personaje_4{
         height: 200px;
         width: 200px;
-        background-image: url(img/PORTRAIT-FURY.png);
+        background-image: url(img/PORTRAIT-SERE.png);
         background-size: cover;
         margin-bottom: 200px;
         transition: 300ms;
